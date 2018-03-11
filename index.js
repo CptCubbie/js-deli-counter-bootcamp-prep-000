@@ -22,6 +22,6 @@ function currentLine(line) {
     for (var i = 0; i<line.length; i++) {
       newLine.push(`${[i+1]}. ${line[i]}`);
     }
-    return newString + newLine;
+    return newString + newLine.join(", ");
   }
 }
